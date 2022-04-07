@@ -5,7 +5,6 @@
 }
 
 body {
-  background-color: steelblue;
   color: #fff;
   font-family: 'Muli', sans-serif;
   display: flex;
@@ -15,12 +14,17 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #0083B0, #00B4DB);
+  background: linear-gradient(to left, #0083B0, #00B4DB);
+
 }
 
 .container {
   background-color: rgba(0, 0, 0, 0.4);
   padding: 20px 40px;
-  border-radius: 5px;
+  border-radius: 6px;
+  box-shadow:0 0 7px black;
 }
 
 .container h1 {
@@ -98,4 +102,18 @@ body {
 .form-control input:valid + label span {
   color: lightblue;
   transform: translateY(-30px);
+}
+#reg {
+  transition:300ms;
+}
+#reg:hover{
+  transition:300ms;
+  color:#00a4db;
+}
+.btn {
+  transition:700ms;
+}
+.btn:hover {
+  transition:400ms;
+  box-shadow:0 0 5px rgba(0, 0, 0, 0.726);
 }
